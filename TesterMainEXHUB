@@ -1,5 +1,7 @@
+
+
 local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local HackFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local ScriptFrame = Instance.new("ScrollingFrame")
 local TextBox = Instance.new("TextBox")
@@ -8,29 +10,29 @@ local TextLabel = Instance.new("TextLabel")
 local TextButton = Instance.new("TextButton")
 local Execute = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
-local Frame_2 = Instance.new("Frame")
-local UICorner_4 = Instance.new("UICorner")
 local Clear = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local Discord = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TextButton_2 = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
-local ImageButton = Instance.new("ImageButton")
-local UICorner_7 = Instance.new("UICorner")
+
 
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(74, 68, 71)
-Frame.Position = UDim2.new(0.184914827, 0, 0.142570257, 0)
-Frame.Size = UDim2.new(0, 460, 0, 355)
-Frame.Visible = false
+HackFrame.Name = "HackFrame"
+HackFrame.Parent = ScreenGui
+HackFrame.BackgroundColor3 = Color3.fromRGB(74, 68, 71)
+HackFrame.Position = UDim2.new(0.184914827, 0, 0.142570257, 0)
+HackFrame.Size = UDim2.new(0, 460, 0, 355)
+HackFrame.Visible = false
 
-UICorner.Parent = Frame
+UICorner.Parent = HackFrame
 
 ScriptFrame.Name = "ScriptFrame"
-ScriptFrame.Parent = Frame
+ScriptFrame.Parent = HackFrame
 ScriptFrame.Active = true
 ScriptFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 ScriptFrame.Position = UDim2.new(0.0376676023, 0, 0.201815471, 0)
@@ -50,7 +52,7 @@ TextBox.TextYAlignment = Enum.TextYAlignment.Top
 
 UICorner_2.Parent = ScriptFrame
 
-TextLabel.Parent = Frame
+TextLabel.Parent = HackFrame
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.BackgroundTransparency = 1.000
 TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
@@ -61,7 +63,7 @@ TextLabel.Text = "BaconExecutorV2"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 40.000
 
-TextButton.Parent = Frame
+TextButton.Parent = HackFrame
 TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.BorderColor3 = Color3.fromRGB(255, 0, 0)
 TextButton.Position = UDim2.new(0.897826076, 0, 0.0225352105, 0)
@@ -72,7 +74,7 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 38.000
 
 Execute.Name = "Execute"
-Execute.Parent = Frame
+Execute.Parent = HackFrame
 Execute.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Execute.Position = UDim2.new(0.0369654298, 0, 0.790469587, 0)
 Execute.Size = UDim2.new(0, 137, 0, 34)
@@ -85,16 +87,8 @@ Execute.TextWrapped = true
 
 UICorner_3.Parent = Execute
 
-Frame_2.Parent = Frame
-Frame_2.BackgroundColor3 = Color3.fromRGB(28, 34, 58)
-Frame_2.Position = UDim2.new(0, 0, -0.0563380271, 0)
-Frame_2.Size = UDim2.new(0, 460, 0, 28)
-
-UICorner_4.CornerRadius = UDim.new(0, 6)
-UICorner_4.Parent = Frame_2
-
 Clear.Name = "Clear"
-Clear.Parent = Frame
+Clear.Parent = HackFrame
 Clear.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Clear.Position = UDim2.new(0.659712076, 0, 0.787845016, 0)
 Clear.Size = UDim2.new(0, 137, 0, 34)
@@ -105,10 +99,10 @@ Clear.TextScaled = true
 Clear.TextSize = 14.000
 Clear.TextWrapped = true
 
-UICorner_5.Parent = Clear
+UICorner_4.Parent = Clear
 
 Discord.Name = "Discord"
-Discord.Parent = Frame
+Discord.Parent = HackFrame
 Discord.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
 Discord.Position = UDim2.new(0.351016432, 0, 0.787845016, 0)
 Discord.Size = UDim2.new(0, 137, 0, 34)
@@ -119,16 +113,18 @@ Discord.TextScaled = true
 Discord.TextSize = 14.000
 Discord.TextWrapped = true
 
-UICorner_6.Parent = Discord
+UICorner_5.Parent = Discord
 
-ImageButton.Parent = ScreenGui
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.Position = UDim2.new(0.907542586, 0, 0.122489959, 0)
-ImageButton.Size = UDim2.new(0, 61, 0, 60)
-ImageButton.Image = "rbxassetid://12315575901"
+TextButton_2.Parent = ScreenGui
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.Position = UDim2.new(0.919708014, 0, 0.190763056, 0)
+TextButton_2.Size = UDim2.new(0, 56, 0, 50)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "RightCtrl"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextSize = 14.000
 
-UICorner_7.CornerRadius = UDim.new(3, 8)
-UICorner_7.Parent = ImageButton
+UICorner_6.Parent = TextButton_2
 
 -- Module Scripts:
 
