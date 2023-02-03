@@ -14,8 +14,6 @@ local Clear = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local Discord = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local TextButton_2 = Instance.new("TextButton")
-local UICorner_6 = Instance.new("UICorner")
 
 
 
@@ -27,7 +25,6 @@ HackFrame.Parent = ScreenGui
 HackFrame.BackgroundColor3 = Color3.fromRGB(74, 68, 71)
 HackFrame.Position = UDim2.new(0.184914827, 0, 0.142570257, 0)
 HackFrame.Size = UDim2.new(0, 460, 0, 355)
-HackFrame.Visible = false
 
 UICorner.Parent = HackFrame
 
@@ -114,17 +111,6 @@ Discord.TextSize = 14.000
 Discord.TextWrapped = true
 
 UICorner_5.Parent = Discord
-
-TextButton_2.Parent = ScreenGui
-TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextButton_2.Position = UDim2.new(0.919708014, 0, 0.190763056, 0)
-TextButton_2.Size = UDim2.new(0, 56, 0, 50)
-TextButton_2.Font = Enum.Font.SourceSans
-TextButton_2.Text = "RightCtrl"
-TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton_2.TextSize = 14.000
-
-UICorner_6.Parent = TextButton_2
 
 -- Module Scripts:
 
